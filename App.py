@@ -91,7 +91,7 @@ class App:
                 nNota = input("editar qual nota?(1,2,3) ")
                 if nNota == "1" or nNota == "2" or nNota == "3":
                     nNota = int(nNota)-1
-                    nota = int(input('por qual? '))
+                    nota = float(input('por qual? '))
                     self.alunos[self.alunos.index(i)]['notas'][nNota] = nota
                     with open('alunos.json', 'w') as file:
                         json.dump(self.alunos, file)
